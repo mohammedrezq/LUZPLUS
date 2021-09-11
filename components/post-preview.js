@@ -12,7 +12,7 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
+    <div className="border-2">
       <div className="mb-5">
         {coverImage && (
           <CoverImage title={title} coverImage={coverImage} slug={slug} />
