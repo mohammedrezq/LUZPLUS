@@ -1,0 +1,39 @@
+.postPreview {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 3px;
+
+
+  .postPreviewContent {
+    padding: 0 1rem;
+  }
+
+}
+
+
+@media screen and(min-width: 768px) {
+    .postPreview {
+        position: relative;
+        border: 1px solid #ddd;
+        transition: 0.2s ease-in-out;
+        border-radius: 8px;
+      
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
+          transform: translateY(-8px);
+          transform: scale(1.01);
+        }
+      
+        .postPreviewContent {
+          padding: 0 1rem;
+        }
+      
+        & div {
+          border-radius: 8px 8px 0 0;
+      
+          & img {
+            border-radius: 8px 8px 0 0;
+          }
+        }
+      }
+}
